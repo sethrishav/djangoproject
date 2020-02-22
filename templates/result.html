@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seth</title>
+</head>
+<body>
+<h1>this passage has {{ wordcount }} no of words</h1>
+<a href="{%  url 'home'%}">click here for home page</a>
+<br></br>
+{{ article }}<br></br>
+<h1>total words</h1>
+<h1>words</h1>
+{% for word,num in dictword %}
+
+    <h2>{{ word }}:               ({{ num }})</h2>
+
+{% endfor %}
+
+</body>
+</html>

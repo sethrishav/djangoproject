@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+</head>
+<body>
+<h1>you are successfully signed into my first webpage </h1>
+<table border="1" cellpadding="8" cellspacing="11">
+	<tr>
+		<th>Name</th>
+		<th>Roll no.</th>
+	</tr>
+	<tr>
+		<td>Ratnesh</td>
+		<td>331</td>
+	</tr>
+	<tr>
+		<td>Rishav</td>
+		<td>333</td>
+	</tr></table>
+<h1>i am coming from html</h1>
+<a href="{%  url 'result'%}">click here for result</a>
+
+<form action="{%  url 'result'%}">
+    {% csrf_token %}
+    <textarea cols="40" rows="20" name="article"></textarea>
+    <br></br>
+
+
+    <input type="submit" name="submit">
+</form>
+
+</body>
+</html>
